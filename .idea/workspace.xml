@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f3bb398f-87bd-4052-a65b-c17ef9560e71" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1bc7CBxEpfBn03ghailVVBc346f" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/JavaDemo" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15527344" />
+    <property name="project.structure.side.proportion" value="0.37803468" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lpq.stream.transformation.connect" />
+      <recent name="com.lpq.flinklearning.kafka" />
+      <recent name="com.lpq.stream.window" />
+      <recent name="com.lpq.stream.join" />
+      <recent name="com.lpq.stream.time" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\tech\flink\flink-learning\flink-learning-stream\src\main\java\com\lpq\stream\processfunction" />
+      <recent name="E:\tech\flink\flink-learning\flink-learning-stream\src\main\java\com\lpq\stream\join" />
+      <recent name="E:\tech\flink\flink-learning\flink-learning-stream\src\main\resources" />
+      <recent name="E:\tech\flink\flink-learning\flink-learning-stream\src\main\java\com\lpq\stream\transformation\smoke" />
+      <recent name="E:\tech\flink\flink-learning\flink-learning-stream\src\main\java\com\lpq\stream\transformation\sensor" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TypeDemo">
+    <configuration name="CoProcessFunctionTimers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.processfunction.CoProcessFunctionTimers" />
+      <module name="flink-learning-stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpq.stream.processfunction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConnectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.transformation.connect.ConnectDemo" />
+      <module name="flink-learning-stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpq.stream.transformation.connect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SplitAndUnionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.transformation.SplitAndUnionDemo" />
+      <module name="flink-learning-stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpq.stream.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TupleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.transformation.TupleTest" />
+      <module name="flink-learning-stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpq.stream.transformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TypeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.type.TypeDemo" />
+      <module name="flink-learning-stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpq.stream.type.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.batch.WordCount" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.batch.WordCount" />
+      <module name="flink-learning-batch" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.dataemit.DataEmit" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.dataemit.DataEmit" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.kafka.KafkaSourceDemo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.source.kafka.KafkaSourceDemo" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.sink.SinkDemoMain" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.sink.SinkDemoMain" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.source.CollectionSourceDemo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.source.CollectionSourceDemo" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.source.FileSourceDemo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.source.FileSourceDemo" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.source.kafka.KafkaTableSourceDemo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.source.kafka.KafkaTableSourceDemo" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.source.mysql.MysqlSourceDemo" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.source.mysql.MysqlSourceDemo" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.sql.wordcount.SQLStreamWordCount" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.sql.wordcount.SQLStreamWordCount" />
+      <module name="flink-learning-sql" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.lpq.stream.WordCount" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.WordCount" />
+      <module name="flink-learning-stream" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.com.lpq.dataemit.DataEmit" />
+      <item itemvalue="Application.com.lpq.sql.kafka.KafkaSourceDemo" />
+      <item itemvalue="Application.com.lpq.sql.wordcount.SQLStreamWordCount" />
+      <item itemvalue="Application.com.lpq.sql.source.kafka.KafkaTableSourceDemo" />
+      <item itemvalue="Application.com.lpq.sql.source.FileSourceDemo" />
+      <item itemvalue="Application.com.lpq.sql.source.CollectionSourceDemo" />
+      <item itemvalue="Application.com.lpq.sql.sink.SinkDemoMain" />
+      <item itemvalue="Application.com.lpq.stream.WordCount" />
+      <item itemvalue="Application.com.lpq.batch.WordCount" />
+      <item itemvalue="Application.com.lpq.sql.source.mysql.MysqlSourceDemo" />
+      <item itemvalue="Application.CoProcessFunctionTimers" />
+      <item itemvalue="Application.ConnectDemo" />
+      <item itemvalue="Application.SplitAndUnionDemo" />
+      <item itemvalue="Application.TupleTest" />
+      <item itemvalue="Application.TypeDemo" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TypeDemo" />
+        <item itemvalue="Application.TupleTest" />
+        <item itemvalue="Application.SplitAndUnionDemo" />
+        <item itemvalue="Application.CoProcessFunctionTimers" />
+        <item itemvalue="Application.ConnectDemo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f3bb398f-87bd-4052-a65b-c17ef9560e71" name="Default Changelist" comment="" />
+      <created>1588919397483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588919397483</updated>
+      <workItem from="1588919400474" duration="7131000" />
+      <workItem from="1588990810624" duration="19689000" />
+      <workItem from="1589016074792" duration="5110000" />
+      <workItem from="1589114243900" duration="2159000" />
+      <workItem from="1589160301557" duration="1279000" />
+      <workItem from="1589549849962" duration="12774000" />
+      <workItem from="1589629753929" duration="662000" />
+      <workItem from="1589715793686" duration="4885000" />
+      <workItem from="1589759539262" duration="5756000" />
+      <workItem from="1589847344438" duration="18991000" />
+      <workItem from="1589938407963" duration="12502000" />
+      <workItem from="1590019865152" duration="9919000" />
+      <workItem from="1590111639814" duration="703000" />
+      <workItem from="1590129481834" duration="7095000" />
+      <workItem from="1590285277568" duration="47000" />
+      <workItem from="1590373058445" duration="18965000" />
+      <workItem from="1590409190257" duration="5639000" />
+      <workItem from="1590457592400" duration="15240000" />
+      <workItem from="1590482001185" duration="1143000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Project_Structure" timestamp="1590373133248">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1590373133248" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589032295970">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589032295970" />
+    <state x="513" y="327" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1590139474410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="513" y="327" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1536.824@0.0.1536.824" timestamp="1590139474410" />
+    <state x="399" y="99" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1589033744419">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="399" y="99" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589033744419" />
+    <state x="295" y="144" key="#com.intellij.ide.util.MemberChooser" timestamp="1590478878619">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="295" y="144" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590478878619" />
+    <state x="498" y="195" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589032287932">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="195" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1589032287932" />
+    <state x="482" y="123" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog" timestamp="1590384954029">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="482" y="123" key="#com.intellij.refactoring.move.moveMembers.MoveMembersDialog/0.0.1536.824@0.0.1536.824" timestamp="1590384954029" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589954002185">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589954002185" />
+    <state x="523" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1589601384376">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1589601384376" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1590483144833">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590483144833" />
+    <state width="1493" height="312" key="GridCell.Tab.0.bottom" timestamp="1590481673705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="312" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
+    <state width="1493" height="312" key="GridCell.Tab.0.center" timestamp="1590481673705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="312" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
+    <state width="1493" height="312" key="GridCell.Tab.0.left" timestamp="1590481673705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="312" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
+    <state width="1493" height="312" key="GridCell.Tab.0.right" timestamp="1590481673705">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="312" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
+    <state width="1493" height="307" key="GridCell.Tab.1.bottom" timestamp="1590415716283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590415716283" />
+    <state width="1493" height="307" key="GridCell.Tab.1.center" timestamp="1590415716282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1590415716282" />
+    <state width="1493" height="307" key="GridCell.Tab.1.left" timestamp="1590415716282">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1590415716282" />
+    <state width="1493" height="307" key="GridCell.Tab.1.right" timestamp="1590415716283">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="307" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1590415716283" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1589019735244">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589019735244" />
+    <state width="775" height="419" key="XDebugger.FullValuePopup" timestamp="1589600789052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="775" height="419" key="XDebugger.FullValuePopup/0.0.1536.824@0.0.1536.824" timestamp="1589600789052" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1590482003321">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1590482003321" />
+    <state x="499" y="177" key="extract.method.dialog" timestamp="1590134689820">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="177" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1590134689820" />
+    <state x="178" y="107" key="new project wizard" timestamp="1589027007403">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1589027007403" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1590021753541">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590021753541" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590459435320">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590459435320" />
+  </component>
+</project>
