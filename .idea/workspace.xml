@@ -4,7 +4,12 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3bb398f-87bd-4052-a65b-c17ef9560e71" name="Default Changelist" comment="" />
+    <list default="true" id="f3bb398f-87bd-4052-a65b-c17ef9560e71" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/window.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/CustomWindow.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +24,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -38,10 +46,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/JavaDemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.37803468" />
@@ -64,26 +73,13 @@
       <recent name="E:\tech\flink\flink-learning\flink-learning-stream\src\main\java\com\lpq\stream\transformation\sensor" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TypeDemo">
-    <configuration name="CoProcessFunctionTimers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.processfunction.CoProcessFunctionTimers" />
+  <component name="RunManager" selected="Application.AggregateAndWindowFunctionDemo">
+    <configuration name="AggregateAndWindowFunctionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.window.AggregateAndWindowFunctionDemo" />
       <module name="flink-learning-stream" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lpq.stream.processfunction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConnectDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.transformation.connect.ConnectDemo" />
-      <module name="flink-learning-stream" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lpq.stream.transformation.connect.*" />
+          <option name="PATTERN" value="com.lpq.stream.window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,6 +119,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.lpq.stream.type.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WindowFunctionDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lpq.stream.window.WindowFunctionDemo" />
+      <module name="flink-learning-stream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lpq.stream.window.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,19 +220,19 @@
       <item itemvalue="Application.com.lpq.stream.WordCount" />
       <item itemvalue="Application.com.lpq.batch.WordCount" />
       <item itemvalue="Application.com.lpq.sql.source.mysql.MysqlSourceDemo" />
-      <item itemvalue="Application.CoProcessFunctionTimers" />
-      <item itemvalue="Application.ConnectDemo" />
       <item itemvalue="Application.SplitAndUnionDemo" />
       <item itemvalue="Application.TupleTest" />
       <item itemvalue="Application.TypeDemo" />
+      <item itemvalue="Application.WindowFunctionDemo" />
+      <item itemvalue="Application.AggregateAndWindowFunctionDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AggregateAndWindowFunctionDemo" />
+        <item itemvalue="Application.WindowFunctionDemo" />
         <item itemvalue="Application.TypeDemo" />
         <item itemvalue="Application.TupleTest" />
         <item itemvalue="Application.SplitAndUnionDemo" />
-        <item itemvalue="Application.CoProcessFunctionTimers" />
-        <item itemvalue="Application.ConnectDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +268,7 @@
       <workItem from="1590409190257" duration="5639000" />
       <workItem from="1590457592400" duration="15240000" />
       <workItem from="1590482001185" duration="1143000" />
+      <workItem from="1590633383524" duration="7271000" />
     </task>
     <servers />
   </component>
@@ -274,6 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589032295970" />
+    <state x="501" y="215" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590651845409">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="501" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1590651845409" />
     <state x="513" y="327" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1590139474410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -282,10 +296,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="399" y="99" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.824@0.0.1536.824" timestamp="1589033744419" />
-    <state x="295" y="144" key="#com.intellij.ide.util.MemberChooser" timestamp="1590478878619">
+    <state x="295" y="144" key="#com.intellij.ide.util.MemberChooser" timestamp="1590654665522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="295" y="144" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590478878619" />
+    <state x="295" y="144" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590654665522" />
     <state x="498" y="195" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589032287932">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -302,26 +316,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="263" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1589601384376" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1590483144833">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1590655237295">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590483144833" />
-    <state width="1493" height="312" key="GridCell.Tab.0.bottom" timestamp="1590481673705">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1590655237295" />
+    <state width="1493" height="312" key="GridCell.Tab.0.bottom" timestamp="1590657836273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="312" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
-    <state width="1493" height="312" key="GridCell.Tab.0.center" timestamp="1590481673705">
+    <state width="1493" height="312" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1590657836273" />
+    <state width="1493" height="312" key="GridCell.Tab.0.center" timestamp="1590657836273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="312" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
-    <state width="1493" height="312" key="GridCell.Tab.0.left" timestamp="1590481673705">
+    <state width="1493" height="312" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1590657836273" />
+    <state width="1493" height="312" key="GridCell.Tab.0.left" timestamp="1590657836273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="312" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
-    <state width="1493" height="312" key="GridCell.Tab.0.right" timestamp="1590481673705">
+    <state width="1493" height="312" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1590657836273" />
+    <state width="1493" height="312" key="GridCell.Tab.0.right" timestamp="1590657836273">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="312" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590481673705" />
+    <state width="1493" height="312" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1590657836273" />
     <state width="1493" height="307" key="GridCell.Tab.1.bottom" timestamp="1590415716283">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -362,9 +376,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590021753541" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590459435320">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590652413404">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590459435320" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590652413404" />
   </component>
 </project>
