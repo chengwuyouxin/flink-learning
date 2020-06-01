@@ -1,6 +1,5 @@
 package com.lpq.stream.window;
 
-import com.lpq.stream.timecharacteristics.AssignerWithPunctuatedDemo;
 import com.lpq.stream.transformation.sensor.SensorReading;
 import com.lpq.stream.transformation.sensor.SensorSource;
 import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
