@@ -35,7 +35,9 @@ public class KafkaTableSourceDemo {
         String countSql = "select name,sum(amount) from order_table group by name";
 
         blinkStreamTableEnvironment.sqlUpdate(ddlSource);
+
         Table result = blinkStreamTableEnvironment.sqlQuery(countSql);
+
         blinkStreamTableEnvironment.toRetractStream(result, Row.class).print();
 
         blinkStreamTableEnvironment.execute("Flink read data from kafka table");

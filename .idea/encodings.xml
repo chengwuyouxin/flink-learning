@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/flink-learning-batch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-learning-batch/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-learning-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flink-learning-common/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-learning-connector/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-learning-connector/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-learning-sql/src/main/java" charset="UTF-8" />

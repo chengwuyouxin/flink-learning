@@ -1,10 +1,7 @@
 package com.lpq.sql.source;
 
-import com.lpq.sql.wordcount.SQLBatchWordCount;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-
-import java.util.Arrays;
 
 /**
  * Collection Source
