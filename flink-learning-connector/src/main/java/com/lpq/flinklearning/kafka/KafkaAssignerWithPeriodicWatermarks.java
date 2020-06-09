@@ -23,8 +23,13 @@ public class KafkaAssignerWithPeriodicWatermarks implements AssignerWithPeriodic
         return new Watermark(maxTs - bound);
     }
 
-    //使用 Kafka 的时间戳时，无需定义时间戳提取器。
-    // extractTimestamp() 方法的 previousElementTimestamp 参数包含 Kafka 消息携带的时间戳。
+    /**
+     * 使用 Kafka 的时间戳时，无需定义时间戳提取器。
+     * extractTimestamp() 方法的 previousElementTimestamp 参数包含 Kafka 消息携带的时间戳。
+     * @param jsonNodes
+     * @param lastTimestamp
+     * @return
+     */
     @Override
     public long extractTimestamp(ObjectNode jsonNodes, long lastTimestamp) {
         maxTs = Math.max(maxTs,lastTimestamp);

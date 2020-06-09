@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="flink-learning-stream" />
-        <module name="flink-learning-common" />
-        <module name="flink-learning-connector" />
-        <module name="flink-learning-sql" />
         <module name="flink-learning-batch" />
+        <module name="flink-learning-sql" />
+        <module name="flink-learning-connector" />
+        <module name="flink-learning-common" />
+        <module name="flink-learning-stream" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

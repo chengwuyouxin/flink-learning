@@ -1,24 +1,19 @@
 package com.lpq.stream.taxiorder;
 
-import com.alibaba.fastjson.JSON;
 import com.lpq.flinklearning.dao.TaxiOrder;
 
-import com.lpq.flinklearning.kafka.KafkaAssignerWithPeriodicWatermarks;
-import com.lpq.flinklearning.kafka.MyJsonDeserializationSchema;
 import com.lpq.flinklearning.utils.KafkaUtil;
-import org.apache.flink.api.common.functions.MapFunction;
-import org.apache.flink.api.common.serialization.SimpleStringSchema;
+import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.tuple.Tuple3;
-import org.apache.flink.api.java.tuple.Tuple4;
-import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.node.ObjectNode;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.ProcessFunction;
+import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor;
+import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer011;
 import org.apache.flink.util.Collector;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -32,29 +27,42 @@ public class TaxiRisk {
                 StreamExecutionEnvironment.getExecutionEnvironment();
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
 
-        FlinkKafkaConsumer011<ObjectNode> consumer011 =
+
+        FlinkKafkaConsumer011<TaxiOrder> consumer011 =
                 new FlinkKafkaConsumer011<>(
                         "taxiorder",
-                        new MyJsonDeserializationSchema(true),
+                        new MyKafkaJsonDeserializationSchema(),
                         KafkaUtil.getKafkaConsumerProperties("TaxiOrderConsumer")
                 );
 
 
         consumer011.setStartFromGroupOffsets();
         //如果不设置，不会发送watermark
-        consumer011.assignTimestampsAndWatermarks(new KafkaAssignerWithPeriodicWatermarks());
-
-        DataStream<ObjectNode> kafkaStream = env.addSource(consumer011);
-        DataStream<TaxiOrder> orders = kafkaStream.map(new MapFunction<ObjectNode, TaxiOrder>() {
+//        consumer011.assignTimestampsAndWatermarks(new MyKafkaAssignerWithPeriodWatermarks());
+        consumer011.assignTimestampsAndWatermarks(new BoundedOutOfOrdernessTimestampExtractor<TaxiOrder>(Time.seconds(5)) {
             @Override
-            public TaxiOrder map(ObjectNode value) throws Exception {
-                String order = value.get("value").toString();
-                return JSON.parseObject(order,TaxiOrder.class);
+            public long extractTimestamp(TaxiOrder element) {
+                return element.getOrderTime();
             }
         });
 
+        DataStream<TaxiOrder> kafkaStream = env
+                .addSource(consumer011)
+                //由于使用了自定义的POJO，下面这句必须有
+                .returns(Types.POJO(TaxiOrder.class));
+//        DataStream<TaxiOrder> orders = kafkaStream.map(new MapFunction<ObjectNode, TaxiOrder>() {
+//            @Override
+//            public TaxiOrder map(ObjectNode value) throws Exception {
+//                String order = value.get("value").toString();
+//                return JSON.parseObject(order,TaxiOrder.class);
+//            }
+//        });
 
-        orders.process(new MyProcessFunction()).print();
+
+        DataStream<Tuple3<String,String,String>> res = kafkaStream.process(new MyProcessFunction());
+        res.print();
+
+//        kafkaStream.print();
 
         env.execute();
 

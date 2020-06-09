@@ -5,7 +5,8 @@
    AscendingTimestampAssigner:
    提取记录中指定字段作为timestamp,使用当前timestamp作为watermark,适合于事件按升序顺序达到
    BoundedOutOfOrdernessTimestampExtractor :
-   接受一个最大的数据延迟时间参数，适合于能够预测数据最大延迟的场景
+   接受一个最大的数据延迟时间参数，适合于能够预测数据最大延迟的场景,
+   生成的watermark比timestamp晚设定的最大容忍度
 
 ## 实现PeriodAssignerWaterMark接口
    周期性生成时间戳和水位线
