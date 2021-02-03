@@ -5,146 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3bb398f-87bd-4052-a65b-c17ef9560e71" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flink-learning-common/src/main/java/com/lpq/flinklearning/dao/ConsoleRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-common/src/main/java/com/lpq/flinklearning/mockdata/Console2Kafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-common/src/main/java/com/lpq/flinklearning/mockdata/EimtOrder2Kafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-common/src/main/java/com/lpq/flinklearning/mockdata/EmitRate2Kafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-common/src/main/java/com/lpq/flinklearning/mockdata/File2Kafka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/join/JoinDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/join/Top5Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/join/TopNDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processlaterecord/UpdateResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/source/RandomFibonacciSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/source/SourceWithTimestamp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/source/sensor/ThresholdUpdate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/state/operatorstate/BroadcastStateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/state/operatorstate/ListStateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/state/operatorstate/ListStateDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/IterateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/SideOutputDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/TransformationDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/CountWindowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/TimeWindowDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/WindowsDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/trigger/ContinuousEventTimeTriggerDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/trigger/DeltaTriggerDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-batch/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/WordCount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/function/RichFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/function/RichFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/partition/CustomPartitionerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/partition/CustomPartitionerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/CoProcessFunctionTimers.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/CoProcessFunctionTimers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/KeyedProcessFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/KeyedProcessFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/ProcessFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/ProcessFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/SideOutputDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/processfunction/SideOutputDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/state/FlatMapFunctionWithStateDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/state/keyedstate/ValueStateDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/state/ListStateDemo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/taxiorder/MyKafkaAssignerWithPeriodWatermarks.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/taxiorder/MyKafkaAssignerWithPeriodWatermarks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/taxiorder/TaxiRisk.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/taxiorder/TaxiRisk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/BasicTransformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/BasicTransformation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/IterateExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/KeyedTransformations.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/KeyedTransformations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/SplitAndUnionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/SplitAndUnionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/TupleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/connect/CoProcessFunctionTimers.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/connect/CoProcessFunctionTimers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/connect/ConnectCoFlatMapFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/connect/ConnectCoFlatMapFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/connect/ConnectDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/connect/ConnectDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/sensor/SensorReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/source/sensor/SensorReading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/sensor/SensorSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/source/sensor/SensorSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/transformation/sensor/SensorTimeAssigner.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/source/sensor/SensorTimeAssigner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/AggregateAndWindowFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/AggregateAndWindowFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/AggregateFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/AggregateFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/CustomWindowDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/CustomerWindowDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/ProcessWindowFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/ProcessWindowFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/ReduceAndProcessFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/ReduceAndProcessFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/RollingWindowDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/TimeWindowDemo2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/WindowFunctionDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/src/main/java/com/lpq/stream/window/WindowFunctionDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/WordCount.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/WordCount.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo$MyProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo$MyProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AscendingTimeStampDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo$MyAssignerWithPeriodic.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo$MyAssignerWithPeriodic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo$MyProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo$MyProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPeriodicDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo$MyAssignerWithPunctuated.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo$MyAssignerWithPunctuated.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo$MyProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo$MyProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/AssignerWithPunctuatedDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo$MyProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo$MyProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/assigntimestampandwatermark/BoundedOutOfOrdernessTimestampExtractorDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/function/RichFunctionDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/function/RichFunctionDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/function/RichFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/function/RichFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/partition/CustomPartitionerExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/partition/CustomPartitionerExample$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/partition/CustomPartitionerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/partition/CustomPartitionerExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/CoProcessFunctionTimers$ReadingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/CoProcessFunctionTimers$ReadingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/CoProcessFunctionTimers.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/CoProcessFunctionTimers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/KeyedProcessFunctionDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/KeyedProcessFunctionDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/KeyedProcessFunctionDemo$TempIncreaseAlertFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/KeyedProcessFunctionDemo$TempIncreaseAlertFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/KeyedProcessFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/KeyedProcessFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/ProcessFunctionDemo$MyProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/ProcessFunctionDemo$MyProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/ProcessFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/ProcessFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo$MySideOutput$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo$MySideOutput$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo$MySideOutput.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo$MySideOutput.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/processfunction/SideOutputDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/state/FlatMapFunctionWithStateDemo$MyFlatMapFunctionWithState.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/state/FlatMapFunctionWithStateDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/state/ListStateDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/MyKafkaAssignerWithPeriodWatermarks.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/MyKafkaAssignerWithPeriodWatermarks.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/TaxiRisk$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/TaxiRisk$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/TaxiRisk$MyProcessFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/TaxiRisk$MyProcessFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/TaxiRisk.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/taxiorder/TaxiRisk.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/BasicTransformation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$FibonacciInputMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$InputMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$MySelector.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$OutputMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$RandomFibonacciSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample$Step.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/IterateExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/KeyedTransformations$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/KeyedTransformations$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/KeyedTransformations$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/KeyedTransformations$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/KeyedTransformations.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/KeyedTransformations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/SplitAndUnionDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/SplitAndUnionDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/SplitAndUnionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/SplitAndUnionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/TupleTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/CoProcessFunctionTimers$ReadingFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/CoProcessFunctionTimers$ReadingFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/CoProcessFunctionTimers.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/CoProcessFunctionTimers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectCoFlatMapFunctionDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectCoFlatMapFunctionDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectCoFlatMapFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectCoFlatMapFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/connect/ConnectDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/sensor/SensorReading.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/sensor/SensorSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/transformation/sensor/SensorTimeAssigner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateAndWindowFunctionDemo$MyAggregateFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateAndWindowFunctionDemo$MyAggregateFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateAndWindowFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateAndWindowFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateFunctionDemo$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateFunctionDemo$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/AggregateFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/CustomWindowDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/CustomWindowDemo$MyCountFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/CustomWindowDemo$MyWindowsAssigner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/CustomWindowDemo$OneSecondIntervalTrigger.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/CustomWindowDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ProcessWindowFunctionDemo$HighAndLowTempProcessWindowFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ProcessWindowFunctionDemo$HighAndLowTempProcessWindowFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ProcessWindowFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ProcessWindowFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ReduceAndProcessFunctionDemo$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ReduceAndProcessFunctionDemo$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ReduceAndProcessFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/ReduceAndProcessFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/RollingWindowDemo$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/RollingWindowDemo$MyProcessWindowFunction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/RollingWindowDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/WindowFunctionDemo$MyWindowFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/WindowFunctionDemo$MyWindowFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/WindowFunctionDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/flink-learning-stream/target/classes/com/lpq/stream/window/WindowFunctionDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -447,8 +308,16 @@
       <workItem from="1611794128533" duration="19672000" />
       <workItem from="1611903108267" duration="4762000" />
       <workItem from="1612232741193" duration="4740000" />
-      <workItem from="1612315095033" duration="5462000" />
+      <workItem from="1612315095033" duration="5696000" />
     </task>
+    <task id="LOCAL-00001" summary="20210203">
+      <created>1612335313751</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1612335313751</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,6 +325,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="20210203" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210203" />
   </component>
   <component name="WindowStateProjectService">
     <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1612318286428">
@@ -466,6 +337,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="339" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1611650696294" />
+    <state x="277" y="6" key="CommitChangelistDialog2" timestamp="1612335308250">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="6" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1612335308250" />
     <state width="523" height="466" key="DebuggerActiveHint" timestamp="1611798756504">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -522,6 +397,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="447" y="145" width="716" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1612315827224" />
+    <state x="453" y="203" key="git4idea.merge.GitPullDialog" timestamp="1612335392588">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="453" y="203" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1612335392588" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1612316716662">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
