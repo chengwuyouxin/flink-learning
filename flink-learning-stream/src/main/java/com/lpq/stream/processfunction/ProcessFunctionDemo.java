@@ -1,8 +1,8 @@
 package com.lpq.stream.processfunction;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;

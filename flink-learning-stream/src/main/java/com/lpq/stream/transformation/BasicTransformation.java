@@ -1,16 +1,14 @@
 package com.lpq.stream.transformation;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.api.common.functions.FilterFunction;
-import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
 import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.util.Collector;
 
 /**
  * @author liupengqiang
@@ -31,11 +29,10 @@ public class BasicTransformation {
         StreamExecutionEnvironment env =
                 StreamExecutionEnvironment.getExecutionEnvironment();
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
-        env.getConfig().setAutoWatermarkInterval(1000L);
+        env.setParallelism(16);
 
         DataStream<SensorReading> reading =
-                env.addSource(new SensorSource())
-                .assignTimestampsAndWatermarks(new SensorTimeAssigner());
+                env.addSource(new SensorSource());
 
         DataStream<String> res = reading
 //                .filter(r -> r.temperature >= 25)
@@ -50,14 +47,6 @@ public class BasicTransformation {
                     @Override
                     public String map(SensorReading sensorReading) throws Exception {
                         return sensorReading.id;
-                    }
-                })
-                .flatMap(new FlatMapFunction<String, String>() {
-                    @Override
-                    public void flatMap(String s, Collector<String> collector) throws Exception {
-                        for(String str : s.split(" ")){
-                            collector.collect(str);
-                        }
                     }
                 })
                 .returns(Types.STRING);

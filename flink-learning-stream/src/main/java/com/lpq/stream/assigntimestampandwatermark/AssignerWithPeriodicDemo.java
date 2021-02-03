@@ -1,7 +1,7 @@
 package com.lpq.stream.assigntimestampandwatermark;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -72,12 +72,14 @@ public class AssignerWithPeriodicDemo {
 
 
         /**
+         * 日期
          * @param sensorReading
-         * @param timestamp  上次记录的时间戳
+         * @param previousElementTimestamp  上次记录的时间戳
          * @return
          */
         @Override
-        public long extractTimestamp(SensorReading sensorReading, long timestamp) {
+        public long extractTimestamp(SensorReading sensorReading, long previousElementTimestamp) {
+
             maxTs = Math.max(maxTs,sensorReading.timestamp);
             return sensorReading.timestamp;
         }

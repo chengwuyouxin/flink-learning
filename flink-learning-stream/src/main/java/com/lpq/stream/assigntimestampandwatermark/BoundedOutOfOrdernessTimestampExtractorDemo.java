@@ -1,7 +1,7 @@
 package com.lpq.stream.assigntimestampandwatermark;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;

@@ -1,8 +1,8 @@
 package com.lpq.stream.transformation;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.collector.selector.OutputSelector;
 import org.apache.flink.streaming.api.datastream.DataStream;
@@ -18,7 +18,7 @@ import java.util.List;
  * split 输入DataStream 输出 SplitStream
  * 将指定的DataStream拆分成两个类型和输入流相同的输出流
  * union 输入DataStream 输出DataStream
- * 合并两条或多条类型相同的输入流
+ * 合并两条或多条类型相同的输入流，不去重
  */
 public class SplitAndUnionDemo {
     public static void main(String[] args) throws Exception {
@@ -48,8 +48,6 @@ public class SplitAndUnionDemo {
         DataStream<SensorReading> high = splitted.select("High");
         DataStream<SensorReading> low = splitted.select("Low");
 
-//        high.print();
-//        low.print();
 
         DataStream<SensorReading> all = high.union(low);
 

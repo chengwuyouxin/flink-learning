@@ -1,8 +1,8 @@
 package com.lpq.stream.window;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;

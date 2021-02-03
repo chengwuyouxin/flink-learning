@@ -1,6 +1,6 @@
 package com.lpq.stream.taxiorder;
 
-import com.lpq.flinklearning.dao.TaxiOrder;
+import com.lpq.connector.dao.TaxiOrder;
 import org.apache.flink.streaming.api.functions.AssignerWithPeriodicWatermarks;
 import org.apache.flink.streaming.api.watermark.Watermark;
 
@@ -12,7 +12,7 @@ import javax.annotation.Nullable;
  */
 public class MyKafkaAssignerWithPeriodWatermarks implements AssignerWithPeriodicWatermarks<TaxiOrder> {
 
-    Long bound = 0 * 1000L;
+    Long bound = 5 * 1000L;
     Long maxTs = Long.MIN_VALUE;
 
     @Nullable

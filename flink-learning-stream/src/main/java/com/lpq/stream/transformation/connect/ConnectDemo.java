@@ -1,18 +1,14 @@
 package com.lpq.stream.transformation.connect;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.api.java.tuple.Tuple2;
-import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.ConnectedStreams;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.streaming.api.functions.co.CoFlatMapFunction;
-import org.apache.flink.streaming.api.functions.co.CoMapFunction;
-import org.apache.flink.streaming.api.functions.co.CoProcessFunction;
 import org.apache.flink.util.Collector;
 
 /**
@@ -40,22 +36,23 @@ public class ConnectDemo {
                 Tuple2.of("sensor_1", 10 * 1000L),
                 Tuple2.of("sensor_2", 60 * 1000L));
 
-        //
         //先连接再分组
-        ConnectedStreams<SensorReading,Tuple2<String,Long>> connectedStreams =
-                input1.connect(input2);
-        ConnectedStreams<SensorReading,Tuple2<String,Long>> keyedConnected =
-                connectedStreams.keyBy(r -> r.id, s -> s.f0);
-        //先分组再连接
+//        ConnectedStreams<SensorReading,Tuple2<String,Long>> connectedStreams =
+//                input1.connect(input2);
 //        ConnectedStreams<SensorReading,Tuple2<String,Long>> KeyedConnected =
-//                input1.keyBy(r -> r.id).connect(input2.keyBy(s->s.f0));
+//                connectedStreams.keyBy(r -> r.id, s -> s.f0);
+        //先分组再连接
+        ConnectedStreams<SensorReading,Tuple2<String,Long>> KeyedConnected =
+                input1.keyBy(r -> r.id).connect(input2.keyBy(s->s.f0));
 
 
         //注意！！！没有关联上的结果此时也在ConnectedStream中
-        //进入到flatMap的算子，两个流中关联上的记录，stream1中的记录在flatMap1中处理，
+        //进入到flatMap的算子，两个流中关联上的记录，
+        // stream1中的记录在flatMap1中处理，
         //stream2中的记录在flatMap2方法中处理，可以在处理函数中对关联的记录进行处理
         //两个流中未关联上的记录，进入各自的方法中进行处理
-        keyedConnected.flatMap(new CoFlatMapFunction<SensorReading, Tuple2<String, Long>,
+        //关联上和未关联上的都在输出中
+        KeyedConnected.flatMap(new CoFlatMapFunction<SensorReading, Tuple2<String, Long>,
                 Tuple2<String,String>>() {
 
             private String filterid = null;

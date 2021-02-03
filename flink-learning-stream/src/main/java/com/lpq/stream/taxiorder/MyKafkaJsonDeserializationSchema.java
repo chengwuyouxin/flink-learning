@@ -1,6 +1,6 @@
 package com.lpq.stream.taxiorder;
 
-import com.lpq.flinklearning.dao.TaxiOrder;
+import com.lpq.connector.dao.TaxiOrder;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.shaded.jackson2.com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.flink.streaming.connectors.kafka.KafkaDeserializationSchema;

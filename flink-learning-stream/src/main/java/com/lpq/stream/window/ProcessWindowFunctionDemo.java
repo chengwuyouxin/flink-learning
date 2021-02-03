@@ -1,21 +1,18 @@
 package com.lpq.stream.window;
 
 import com.lpq.stream.model.MinMaxTemp;
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
-import org.apache.flink.api.java.tuple.Tuple;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.WindowedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.windowing.ProcessWindowFunction;
+import org.apache.flink.streaming.api.windowing.assigners.TumblingEventTimeWindows;
 import org.apache.flink.streaming.api.windowing.time.Time;
-import org.apache.flink.streaming.api.windowing.windows.GlobalWindow;
 import org.apache.flink.streaming.api.windowing.windows.TimeWindow;
 import org.apache.flink.util.Collector;
-
-import java.util.Iterator;
 
 /**
  * @author liupengqiang
@@ -30,11 +27,15 @@ public class ProcessWindowFunctionDemo {
         DataStream<SensorReading> input =
                 env.addSource(new SensorSource())
                 .assignTimestampsAndWatermarks(new SensorTimeAssigner());
+        WindowedStream<SensorReading,String,TimeWindow> windowedStream =
+                        input
+                        .keyBy(value -> value.id)
+                        .window(TumblingEventTimeWindows.of(Time.seconds(5)));
 
         DataStream<MinMaxTemp> result =
                  input
                 .keyBy(value -> value.id)
-                .timeWindow(Time.seconds(5))
+                .window(TumblingEventTimeWindows.of(Time.seconds(5)))
                 .process(new HighAndLowTempProcessWindowFunction());
 
         result.print();

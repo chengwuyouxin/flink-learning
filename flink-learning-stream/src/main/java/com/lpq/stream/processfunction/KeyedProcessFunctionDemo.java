@@ -1,20 +1,17 @@
 package com.lpq.stream.processfunction;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.functions.KeySelector;
-import org.apache.flink.api.java.tuple.Tuple3;
-import org.apache.flink.api.java.tuple.Tuple4;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
-import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.util.Collector;
 
 import java.text.SimpleDateFormat;
@@ -32,19 +29,13 @@ public class KeyedProcessFunctionDemo {
         StreamExecutionEnvironment env =
                 StreamExecutionEnvironment.getExecutionEnvironment();
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
-        env.getConfig().setAutoWatermarkInterval(100L);
 
         DataStream<SensorReading> input =
                 env.addSource(new SensorSource())
                 .assignTimestampsAndWatermarks(new SensorTimeAssigner());
 
         DataStream<String> result =
-                input.keyBy(new KeySelector<SensorReading, String>() {
-                    @Override
-                    public String getKey(SensorReading sensorReading) throws Exception {
-                        return sensorReading.id;
-                    }
-                })
+                input.keyBy(r->r.id)
                 .process(new TempIncreaseAlertFunction());
 
         result.print();

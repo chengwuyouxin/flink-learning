@@ -19,32 +19,9 @@ import static org.apache.flink.api.common.typeinfo.Types.*;
  */
 public class WordCount {
     public static void main(String[] args) throws Exception {
+
         final StreamExecutionEnvironment env =
                 StreamExecutionEnvironment.getExecutionEnvironment();
-        //匿名类
-//        env.fromElements(WORDS)
-//                .flatMap(new FlatMapFunction<String, Tuple2<String,Integer>>() {
-//                    @Override
-//                    public void flatMap(String value, Collector<Tuple2<String, Integer>> collector) throws Exception {
-//                        String[] splits = value.toLowerCase().split("\\W+");
-//
-//                        for(String split : splits){
-//                            if(split.length() > 0){
-//                                collector.collect(new Tuple2<>(split,1));
-//                            }
-//                        }
-//                    }
-//                })
-//                .keyBy(0)
-//                .reduce(new ReduceFunction<Tuple2<String, Integer>>() {
-//                    @Override
-//                    public Tuple2<String, Integer> reduce(Tuple2<String, Integer> value1, Tuple2<String, Integer> value2) throws Exception {
-//                        return new Tuple2<>(value1.f0,value1.f1 + value2.f1);
-//                    }
-//                })
-//                .print();
-
-        //lambda
 
         SingleOutputStreamOperator<String> wordsDS = env.fromElements(WORDS).flatMap((String line, Collector<String> ctx) -> {
             // 切分单词

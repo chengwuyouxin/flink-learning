@@ -1,8 +1,8 @@
 package com.lpq.stream.transformation.connect;
 
-import com.lpq.stream.transformation.sensor.SensorReading;
-import com.lpq.stream.transformation.sensor.SensorSource;
-import com.lpq.stream.transformation.sensor.SensorTimeAssigner;
+import com.lpq.stream.source.sensor.SensorReading;
+import com.lpq.stream.source.sensor.SensorSource;
+import com.lpq.stream.source.sensor.SensorTimeAssigner;
 import com.lpq.stream.transformation.smoke.Alert;
 import com.lpq.stream.transformation.smoke.SmokeLevel;
 import com.lpq.stream.transformation.smoke.SmokeLevelSource;
@@ -42,6 +42,7 @@ public class ConnectCoFlatMapFunctionDemo {
         DataStream<Alert> alerts = keyedTempReadings
                 .connect(smokeReadings.broadcast())
                 //对关联上记录，通过smokeLevel变量使二者产生关联进行过滤
+                //flatMap1处理stream1中的记录 flatMap2处理stream2中的记录
                 .flatMap(new CoFlatMapFunction<SensorReading, SmokeLevel, Alert>() {
                     private SmokeLevel smokeLevel = SmokeLevel.LOW;
                     @Override

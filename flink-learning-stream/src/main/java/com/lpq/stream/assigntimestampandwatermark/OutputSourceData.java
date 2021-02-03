@@ -1,7 +1,5 @@
 package com.lpq.stream.assigntimestampandwatermark;
 
-import com.lpq.flinklearning.dao.TaxiOrder;
-import com.lpq.flinklearning.selfdefsource.SourceFunctionDemo;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
