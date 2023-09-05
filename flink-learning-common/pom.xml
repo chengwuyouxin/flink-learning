@@ -12,7 +12,7 @@
     <artifactId>flink-learing-common</artifactId>
 
     <properties>
-        <kafka-clients>2.4.1</kafka-clients>
+        <kafka-clients>2.6.3</kafka-clients>
     </properties>
     <dependencies>
         <dependency>
